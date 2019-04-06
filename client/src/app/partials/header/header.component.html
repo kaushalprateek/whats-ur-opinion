@@ -1,0 +1,53 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" routerLink="/">COMP308</a>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/"
+          ><i class="fas fa-lg fa-igloo"></i> Home
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/about"
+          ><i class="fa fa-lg fa-info"></i> About</a
+        >
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/contact"
+          ><i class="fa fa-lg fa-phone"></i> Surveys</a
+        >
+      </li>
+
+      <li
+        *ngIf="isLoggedIn()"
+        class="navbar-text text-success ml-5 mr-5 d-none d-lg-inline"
+      >
+        <i class="fas fa-lg fa-user"></i> Welcome, {{ user.displayName }}
+      </li>
+
+      <li *ngIf="isLoggedIn()" class="nav-item">
+        <a (click)="onLogoutClick()" routerLink="/logout" class="nav-link">
+          <i class="fas fa-lg fa-sign-out-alt"></i> Logout</a
+        >
+      </li>
+
+      <li *ngIf="!isLoggedIn()" class="nav-item">
+        <a routerLink="/login" class="nav-link">
+          <i class="fas fa-lg fa-sign-in-alt"></i> Login</a
+        >
+      </li>
+    </ul>
+  </div>
+</nav>
