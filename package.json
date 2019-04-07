@@ -1,5 +1,5 @@
 {
-  "name": "comp308-w2019-project",
+  "name": "whats-ur-opinion",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -48,10 +48,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CentennialCollege/COMP308-W2019-Lesson10B.git"
+    "url": "git+https://github.com/kaushalprateek/whats-ur-opinion.git.git"
   },
   "bugs": {
-    "url": "https://github.com/CentennialCollege/COMP308-W2019-Lesson10B/issues"
+    "url": "https://github.com/kaushalprateek/whats-ur-opinion.git/issues"
   },
-  "homepage": "https://github.com/CentennialCollege/COMP308-W2019-Lesson10B#readme"
+  "homepage": "https://github.com/kaushalprateek/whats-ur-opinion.git#readme"
 }
