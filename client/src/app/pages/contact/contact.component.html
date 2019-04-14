@@ -1,13 +1,77 @@
-<app-base-page></app-base-page>>
 <div *ngIf="isLoggedIn()" class="container">
   <div class="row">
     <div class="col col-md-6">
       <div class="card">
         <h5 class="card-header alert-success">Secure</h5>
         <div class="card-body">
-          <a routerLink="" class="btn btn-primary"
-            ><i class="fas fa-users fa-lg"></i> Surveys!!!!</a
-          >
+          <html>
+            <script type="text/javascript"></script>
+
+            <form method="post" onsubmit="return validate(this)">
+              <table>
+                <tr>
+                  <td valign="top">
+                    <div id="newlink">
+                      <div class="feed">
+                        <div>
+                          <label for="Question">Question:</label>
+                          <input type="text" id="q1" name="feedurl[]" />
+                        </div>
+                        <div>
+                          <label for="Answer1">Ans1:</label>
+                          <input type="text" id="a1" name="feedurl[]" />
+                        </div>
+                        <div>
+                          <label for="Answer2">Ans2:</label>
+                          <input type="text" id="a2" name="feedurl[]" />
+                        </div>
+                        <div>
+                          <label for="Answer3">Ans3:</label>
+                          <input type="text" id="a3" name="feedurl[]" />
+                        </div>
+                        <div>
+                          <label for="Answer4">Ans4:</label>
+                          <input type="text" id="a4" name="feedurl[]" />
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+
+              <p>
+                <br />
+                <input type="submit" name="submit1" />
+                <input type="reset" name="reset1" />
+              </p>
+              <p id="addnew">
+                <button (submit)="add_feed()">Add New</button>
+              </p>
+            </form>
+            <!-- Template. This whole data will be added directly to working form above -->
+            <div id="newlinktpl" style="display:none">
+              <div>
+                <label for="Question">Question:</label>
+                <input type="text" id="q1" name="feedurl[]" />
+              </div>
+              <div>
+                <label for="Answer1">Ans1:</label>
+                <input type="text" id="a1" name="feedurl[]" />
+              </div>
+              <div>
+                <label for="Answer2">Ans2:</label>
+                <input type="text" id="a2" name="feedurl[]" />
+              </div>
+              <div>
+                <label for="Answer3">Ans3:</label>
+                <input type="text" id="a3" name="feedurl[]" />
+              </div>
+              <div>
+                <label for="Answer4">Ans4:</label>
+                <input type="text" id="a4" name="feedurl[]" />
+              </div>
+            </div>
+          </html>
         </div>
       </div>
     </div>
