@@ -41,7 +41,7 @@ import { AdminComponent } from "./admin/admin.component";
 
 import { TestComponent } from "./test/test.component";
 
-import { SurveyAppComponent } from "./survey-app/survey-app.component";
+//import { SurveyAppComponent } from "./survey-app/survey-app.component";
 import { UserComponent } from "./user/user.component";
 
 export function jwtTokenGetter() {
@@ -68,7 +68,7 @@ export function jwtTokenGetter() {
     AdminComponent,
 
     UserComponent,
-    SurveyAppComponent,
+
     SurveyComponent,
     SurveyCreatorComponent,
     TestComponent
@@ -78,6 +78,7 @@ export function jwtTokenGetter() {
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
+
     FlashMessagesModule,
     JwtModule.forRoot({
       config: {
