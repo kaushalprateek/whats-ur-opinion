@@ -14,10 +14,31 @@ import { ContactDeleteComponent } from "./contacts/contact-delete/contact-delete
 import { RegisterComponent } from "./pages/register/register.component";
 import { LoginComponent } from "./pages/login/login.component";
 import { AuthGuard } from "./guards/auth.guard";
+import { SurveyAppComponent } from "./survey-app/survey-app.component";
+import { TestComponent } from "./test/test.component";
+import { UserComponent } from "./user/user.component";
+
 
 const routes: Routes = [
   { path: "home", component: HomeComponent, data: { title: "Home" } },
   { path: "about", component: AboutComponent, data: { title: "About" } },
+  
+  {
+    path: "User",
+    component: UserComponent,
+    data: { title: "User" },
+    canActivate: [AuthGuard]
+  },
+  {
+    path: "Surveyapp",
+    component: SurveyAppComponent,
+    data: { title: "SurveyApp" }
+  },
+  {
+    path: "test",
+    component: TestComponent,
+    data: { title: "SurveyApp" }
+  },
 
   {
     path: "contact",

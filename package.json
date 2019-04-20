@@ -10,6 +10,7 @@
     "npm": "^6.0.0"
   },
   "dependencies": {
+    "@angular/cli": "^7.3.8",
     "connect-flash": "^0.1.1",
     "cookie-parser": "~1.4.3",
     "cors": "^2.8.5",
