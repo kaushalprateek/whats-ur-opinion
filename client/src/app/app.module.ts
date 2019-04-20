@@ -37,7 +37,7 @@ import {
 
 // Route Guards
 import { AuthGuard } from "./guards/auth.guard";
-import { AdminComponent } from './admin/admin.component';
+import { AdminComponent } from "./admin/admin.component";
 
 import { TestComponent } from "./test/test.component";
 
@@ -65,15 +65,13 @@ export function jwtTokenGetter() {
     ContactDetailsComponent,
     ContactDeleteComponent,
 
-    AdminComponent
-
+    AdminComponent,
 
     UserComponent,
     SurveyAppComponent,
     SurveyComponent,
     SurveyCreatorComponent,
     TestComponent
-
   ],
   imports: [
     BrowserModule,
