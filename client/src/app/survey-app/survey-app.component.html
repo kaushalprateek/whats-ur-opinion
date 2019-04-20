@@ -1,0 +1,130 @@
+<div class="wrapper">
+  <div class="container">
+    <div class="row surveyTitile">
+      <div class="col-md-12">
+        <form>
+          <input
+            type="text"
+            name="surveyTitile"
+            placeholder="MCQ Survey Template"
+          />
+        </form>
+      </div>
+    </div>
+    <hr />
+
+    <!-- question starts  -->
+    <form class="form" (submit)="onSurveyPageSubmit()">
+      <button type="submit" class="btn btn-primary">submit</button>
+      <div class="row questionrow">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <div class="card">
+            <div class="card-body">
+              <div class="question">
+                <h4>
+                  1)
+                  <input
+                    type="text"
+                    name="question"
+                    id="Q1TextField"
+                    placeholder="Enter Question Here "
+                    name="Q1TextField"
+                    [(ngModel)]="survey.Q1"
+                    value="{{ survey.Q1 }}"
+                  />
+                </h4>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">
+                        <input
+                          type="radio"
+                          aria-label="Radio button for following text input"
+                        />
+                      </div>
+                    </div>
+                    <input
+                      type="text"
+                      class="form-control"
+                      aria-label="Text input with radio button"
+                      id="O1TextField"
+                      placeholder="Enter Question Here "
+                      name="O1TextField"
+                      [(ngModel)]="survey.O1"
+                      value="{{ survey.O1 }}"
+                    />
+                  </div>
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">
+                        <input
+                          type="radio"
+                          aria-label="Radio button for following text input"
+                          id="O2TextField"
+                          placeholder="Enter Question Here "
+                          name="O2TextField"
+                          [(ngModel)]="survey.O2"
+                          value="{{ survey.O2 }}"
+                        />
+                      </div>
+                    </div>
+                    <input
+                      type="text"
+                      class="form-control"
+                      aria-label="Text input with radio button"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">
+                        <input
+                          type="radio"
+                          aria-label="Radio button for following text input"
+                          id="O3TextField"
+                          placeholder="Enter Question Here "
+                          name="O3TextField"
+                          [(ngModel)]="survey.O3"
+                          value="{{ survey.O3 }}"
+                        />
+                      </div>
+                    </div>
+                    <input
+                      type="text"
+                      class="form-control"
+                      aria-label="Text input with radio button"
+                    />
+                  </div>
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">
+                        <input
+                          type="radio"
+                          aria-label="Radio button for following text input"
+                          id="O4TextField"
+                          placeholder="Enter Question Here "
+                          name="O4TextField"
+                          [(ngModel)]="survey.O4"
+                          value="{{ survey.O4 }}"
+                        />
+                      </div>
+                    </div>
+                    <input
+                      type="text"
+                      class="form-control"
+                      aria-label="Text input with radio button"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+    <!-- question ends -->
+  </div>
+</div>

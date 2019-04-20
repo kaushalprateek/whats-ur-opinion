@@ -20,6 +20,8 @@ import { RegisterComponent } from "./pages/register/register.component";
 import { LoginComponent } from "./pages/login/login.component";
 import { ContactDetailsComponent } from "./contacts/contact-details/contact-details.component";
 import { ContactDeleteComponent } from "./contacts/contact-delete/contact-delete.component";
+import { SurveyComponent } from "./test/survey.component";
+import { SurveyCreatorComponent } from "./test/survey.creator.component";
 
 // Services
 import {
@@ -36,6 +38,11 @@ import {
 // Route Guards
 import { AuthGuard } from "./guards/auth.guard";
 import { AdminComponent } from './admin/admin.component';
+
+import { TestComponent } from "./test/test.component";
+
+import { SurveyAppComponent } from "./survey-app/survey-app.component";
+import { UserComponent } from "./user/user.component";
 
 export function jwtTokenGetter() {
   return localStorage.getItem("id_token");
@@ -57,7 +64,16 @@ export function jwtTokenGetter() {
     LoginComponent,
     ContactDetailsComponent,
     ContactDeleteComponent,
+
     AdminComponent
+
+
+    UserComponent,
+    SurveyAppComponent,
+    SurveyComponent,
+    SurveyCreatorComponent,
+    TestComponent
+
   ],
   imports: [
     BrowserModule,

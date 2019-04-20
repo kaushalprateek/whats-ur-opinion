@@ -1,1 +1,14 @@
-<app-base-page></app-base-page>>
+<h1></h1>
+<div>
+  <link
+    href="https://surveyjs.azureedge.net/1.0.81/survey.css"
+    type="text/css"
+    rel="stylesheet"
+  />
+
+  <survey [json]="json" (submitSurvey)="sendData($event)"></survey>
+</div>
+
+<div class="container" ng-controller="fetchdata">
+  <pre id="json"></pre>
+</div>

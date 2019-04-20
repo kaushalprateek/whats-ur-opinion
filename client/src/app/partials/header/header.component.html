@@ -1,5 +1,12 @@
 <nav class="nav">
-  <a class="navbar-brand" routerLink="/"><img src="/assets/img/logo1.png" alt="Logo" height="50" width="100">Whats-UR-Opinion</a>
+  <a class="navbar-brand" routerLink="/"
+    ><img
+      src="/assets/img/logo1.png"
+      alt="Logo"
+      height="50"
+      width="100"
+    />Whats-UR-Opinion</a
+  >
   <button
     class="navbar-toggler"
     type="button"
@@ -13,18 +20,25 @@
   </button>
 
   <ul id="menu">
-    <li><a routerLink="/" >Home</a></li>
-    <li><a routerLink="/about">About</a></li>
-    <li><a routerLink="/contact">Surveys</a></li>
-    <li *ngIf="isLoggedIn()"
-    class="navbar-text text-success ml-5 mr-5 d-none d-lg-inline"><i class="fas fa-lg fa-user"></i> Welcome, {{ user.displayName }}</li>
-    <li *ngIf="isLoggedIn()" class="nav-item"><a (click)="onLogoutClick()" routerLink="/logout" class="nav-link">Logout</a></li>
-    <li *ngIf="!isLoggedIn()" class="nav-item">
-      <a routerLink="/login" class="nav-link"> Login</a
+    <li><a routerLink="/">Home</a></li>
+    <li><a routerLink="/about">Take survey</a></li>
+    <li><a routerLink="/contact"> Admin Surveys</a></li>
+    <li
+      *ngIf="isLoggedIn()"
+      class="navbar-text text-success ml-5 mr-5 d-none d-lg-inline"
+    >
+      <i class="fas fa-lg fa-user"></i> Welcome, {{ user.displayName }}
+    </li>
+    <li *ngIf="isLoggedIn()" class="nav-item">
+      <a (click)="onLogoutClick()" routerLink="/logout" class="nav-link"
+        >Logout</a
       >
-    </li>  
+    </li>
+    <li *ngIf="!isLoggedIn()" class="nav-item">
+      <a routerLink="/login" class="nav-link"> Login</a>
+    </li>
   </ul>
- <!-- <div class="navbar-wrapper">
+  <!-- <div class="navbar-wrapper">
     <div class="container-fluid">
         <nav class="navbar navbar-fixed-top">
             <div class="container">
