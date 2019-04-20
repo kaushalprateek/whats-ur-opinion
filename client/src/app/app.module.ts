@@ -35,6 +35,7 @@ import {
 
 // Route Guards
 import { AuthGuard } from "./guards/auth.guard";
+import { AdminComponent } from './admin/admin.component';
 
 export function jwtTokenGetter() {
   return localStorage.getItem("id_token");
@@ -55,7 +56,8 @@ export function jwtTokenGetter() {
     RegisterComponent,
     LoginComponent,
     ContactDetailsComponent,
-    ContactDeleteComponent
+    ContactDeleteComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,

@@ -14,10 +14,12 @@ import { ContactDeleteComponent } from "./contacts/contact-delete/contact-delete
 import { RegisterComponent } from "./pages/register/register.component";
 import { LoginComponent } from "./pages/login/login.component";
 import { AuthGuard } from "./guards/auth.guard";
+import { AdminComponent } from './admin/admin.component';
 
 const routes: Routes = [
   { path: "home", component: HomeComponent, data: { title: "Home" } },
   { path: "about", component: AboutComponent, data: { title: "About" } },
+  { path: "admin", component: AdminComponent, data: { title: "Admin" } },
 
   {
     path: "contact",
